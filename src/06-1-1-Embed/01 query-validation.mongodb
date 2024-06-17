@@ -1,0 +1,6 @@
+use("storedb")
+
+db.users.find()
+
+use("storedb")
+db.getCollectionInfos()

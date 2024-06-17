@@ -1,0 +1,10 @@
+use("storedb")
+
+db.products.insertOne({
+  name: "Polera Manga Larga",
+  sizes: ["S", "M", "L", "XL",],
+  category: {
+    name: "POLERAS",
+    img: "algo.img"
+  }
+})

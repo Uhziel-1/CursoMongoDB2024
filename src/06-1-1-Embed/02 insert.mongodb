@@ -1,0 +1,21 @@
+use("storedb")
+
+db.users.insertOne({
+  name: "Donagon",
+  lastname:"Guiguls",
+  email: "Doguil98@gmail.com",
+  password: "12345678",
+  age: 21,
+  isSingle: true,
+  role: "seller",
+  address: {
+    street: "Jr. Gonzales Prada",
+    city: "Juliaca",
+    zip: "21001"
+  },
+  shipping: {
+    street: "Jr. Cosco 159",
+    city: "Juliaca",
+    zip: "21001"
+  }
+})

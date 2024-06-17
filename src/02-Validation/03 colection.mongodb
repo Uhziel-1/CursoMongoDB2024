@@ -1,0 +1,25 @@
+use("storedb")
+
+//Creamos un colleccion en forma explicita
+db.createCollection("users", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["email", "password"],
+      properties: {
+        firstname: {
+          bsonType: "string",
+        },
+        lastname: {
+          bsonType: "string",
+        },
+        email: {
+          bsonType: "string",
+        },
+        password: {
+          bsonType: "string",
+        },
+      },
+    },
+  },
+});

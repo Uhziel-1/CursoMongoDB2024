@@ -1,0 +1,24 @@
+use("storedb")
+db.orders.find()
+
+use("storedb")
+db.users.find()
+
+use("storedb")
+db.orders.find().count()
+
+//Ordenes enlazadas al usuario
+use("storedb")
+db.orders.find({user_id: ObjectId('667055dd85cf365edf0d174d')})
+
+//Ejutamos 2 consultas para saber el usuario y sus ordenes
+use("storedb")
+db.users.find({_id:ObjectId('667055dd85cf365edf0d174d')})
+use("storedb")
+db.orders.find({user_id: ObjectId('667055dd85cf365edf0d174d')})
+
+
+
+
+
+

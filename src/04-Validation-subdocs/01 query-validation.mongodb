@@ -1,0 +1,5 @@
+use("storedb")
+
+db.products.find()
+
+db.products.find()
